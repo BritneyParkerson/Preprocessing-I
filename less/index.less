@@ -54,6 +54,233 @@ table {
 }
 
 html, body {
-    height: 100%;
+	
 }
 
+/*MY CODE BELOW*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Alata|Courgette|Permanent+Marker|Satisfy&display=swap');
+
+@background-color: silver;
+@font-family: 'Alata', sans-serif;
+@primary-color: WhiteSmoke;
+@secondary-color: slategrey;
+@line-height: 1.5em;
+
+.bordered{
+	border-bottom: 3px solid grey;
+	border-top: 3px solid grey;
+}
+.border-radius(@radius){
+	border-radius: @radius;
+}
+
+body{
+	font-size: 30px;
+	background: @background-color;
+	height: 100%;
+	width: 100%;
+	border: 5px inset @secondary-color;
+	border-radius: 10px;
+	line-height: @line-height;
+	font-family: @font-family;
+}
+
+nav{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
+}
+nav a{
+	background: grey;
+	border: 7px outset @secondary-color;
+	padding: 5px 20px;
+	margin: auto 5px;
+	.border-radius(40%);
+	color: black;
+}
+nav a:hover{
+	background: cadetblue;
+	border: 7px outset black;
+	color: white;
+
+}
+
+.Me{
+	width: 30%;
+}
+.page-title, section{
+	.bordered
+}
+
+.page-title, section{
+	.border-radius(10px);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	background: rgba(201, 238, 250, 0.76);
+}
+
+h1{
+ font-size: 125px;
+ margin: auto;
+ padding: 50px 50px 2px 50px;
+ text-decoration: underline;
+ line-height: 1em;
+}
+h1, h6{
+	font-family: 'Courgette', cursive;
+}
+h6{
+	font-size: 50px;
+	padding: 15px;
+}
+
+.page-title span{
+	border: 12px outset silver;
+	margin: auto 2%;
+	width: 80%;
+	padding: 0 25px 25px 25px; 
+	.border-radius(50%);
+}
+
+button{
+	font-size: 30px;
+	.border-radius(10%);
+	border: 5px outset grey;
+}
+button:hover{
+	border: 5px inset black;
+	background: cadetblue;
+	color: white;
+}
+
+.tagline, .listen{
+	margin: 15px;
+	border: 1px solid whitesmoke;
+	padding: 5px 20px;
+	background: @primary-color;
+}
+.listen h3{
+	padding-top: 25px;
+}
+h3{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+section{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom:50px;
+	flex-wrap: wrap; 	
+}
+
+.contact{
+	font-size: 25px;
+	text-align: center;
+}
+
+table, th, td {
+	border: 1px solid black;
+
+  }
+table {
+	width: 95%;
+	margin: auto;
+	background: @background-color;
+  }
+  
+  th {
+	height: 55px;
+  }
+  th, td {
+	padding: 10px;
+	text-align: left;
+  }
+  .history table th, .history table td{
+	  height: 110px;
+	  vertical-align: middle;
+  }
+
+ #footer{
+	text-align: center;  
+	background: rgba(201, 238, 250, 0.76);
+  } 
+
+  /*Contact Page*/
+
+  .contacts{
+	 text-align: center;
+	 margin: 15%;
+	 font-size: 50px;
+	 line-height: @line-height;
+	 .bordered
+  }
+  .request{
+	  font-size: 30px;
+	  border: 1px solid grey;
+	  .border-radius( 30px);
+	  margin: 20px auto auto auto;
+  }
+
+  /*Portfolio Page*/
+  .work{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	font-size: 35px;
+}
+.work p{
+	padding: 20px 0px
+	
+}
+
+ /*tidbits Page*/
+
+ article{
+	margin: 20% auto;
+	display: inline-block;
+	text-align: left;
+	font-size: 30px;
+	border: 2px solid black;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	background: rgba(201, 238, 250, 0.76);
+
+ }
+ .testimonials p img{
+	 width: 500px;
+	 height: 300px;
+	 .border-radius(20%);
+ }
+
+ .Tessa, .Ian, .Ebony, .Seth{
+	 border: 2px solid grey;
+	 display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+ }
+
+ .Ian, .Seth{
+	background: rgba(201, 238, 250, 0.76);
+ }
+
+ .Tessa p, .Ian p, .Ebony p, .Seth p{
+	 margin: 20%;
+ }
