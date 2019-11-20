@@ -130,14 +130,167 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
-  border: 5px inset slategrey;
-  border-radius: 10px;
-}
 /*MY CODE BELOW*/
+@font-face {
+  font-family: 'Alata';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Alata Regular'), local('Alata-Regular'), url(https://fonts.gstatic.com/s/alata/v1/PbytFmztEwbIoce9zqM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Courgette Regular'), local('Courgette-Regular'), url(https://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUk1VvoP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Satisfy Regular'), local('Satisfy-Regular'), url(https://fonts.gstatic.com/s/satisfy/v10/rP2Hp2yn6lkG50LoCZOIGA.ttf) format('truetype');
+}
+.bordered {
+  border-bottom: 3px solid grey;
+  border-top: 3px solid grey;
+}
 body {
   font-size: 30px;
-  background: snow;
+  background: silver;
+  height: 100%;
+  width: 100%;
+  border: 5px inset slategrey;
+  border-radius: 10px;
+  line-height: 1.5em;
+  font-family: 'Alata', sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+nav a {
+  background: grey;
+  border: 7px outset slategrey;
+  padding: 5px 20px;
+  margin: auto 5px;
+  border-radius: 40%;
+  color: black;
+}
+nav a:hover {
+  background: cadetblue;
+  border: 7px outset black;
+  color: white;
+}
+.Me {
+  width: 30%;
+}
+.page-title,
+section {
+  border-bottom: 3px solid grey;
+  border-top: 3px solid grey;
+}
+.page-title,
+section {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background: rgba(201, 238, 250, 0.76);
+}
+h1 {
+  font-size: 125px;
+  margin: auto;
+  padding: 50px 50px 2px 50px;
+  text-decoration: underline;
+  line-height: 1em;
+}
+h1,
+h6 {
+  font-family: 'Courgette', cursive;
+}
+h6 {
+  font-size: 50px;
+  padding: 15px;
+}
+.page-title span {
+  border: 12px outset silver;
+  margin: auto 2%;
+  width: 80%;
+  padding: 0 25px 25px 25px;
+  border-radius: 50%;
+}
+button {
+  font-size: 30px;
+  border-radius: 10%;
+  border: 5px outset grey;
+}
+button:hover {
+  border: 5px inset black;
+  background: cadetblue;
+  color: white;
+}
+.tagline,
+.listen {
+  margin: 15px;
+  border: 1px solid whitesmoke;
+  padding: 5px 20px;
+  background: WhiteSmoke;
+}
+.listen h3 {
+  padding-top: 25px;
+}
+h3 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+.contact {
+  font-size: 25px;
+  text-align: center;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+table {
+  width: 95%;
+  margin: auto;
+  background: silver;
+}
+th {
+  height: 55px;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+.history table th,
+.history table td {
+  height: 110px;
+  vertical-align: middle;
+}
+#footer {
+  text-align: center;
 }
