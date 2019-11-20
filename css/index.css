@@ -293,4 +293,61 @@ td {
 }
 #footer {
   text-align: center;
+  background: rgba(201, 238, 250, 0.76);
+}
+/*Contact Page*/
+.contacts {
+  text-align: center;
+  margin: 15%;
+  font-size: 50px;
+  line-height: 1.5em;
+  border-bottom: 3px solid grey;
+  border-top: 3px solid grey;
+}
+/*Portfolio Page*/
+.work {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 35px;
+}
+.work p {
+  padding: 20px 0px;
+}
+/*tidbits Page*/
+article {
+  margin: 20% auto;
+  display: inline-block;
+  text-align: left;
+  font-size: 30px;
+  border: 2px solid black;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background: rgba(201, 238, 250, 0.76);
+}
+.testimonials p img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+}
+.Tessa,
+.Ian,
+.Ebony,
+.Seth {
+  border: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.Ian,
+.Seth {
+  background: rgba(201, 238, 250, 0.76);
 }
